@@ -29,3 +29,9 @@ And eu clico no botão “Confirmar”
 Then eu volto para a seção de comentários do post que estava
 And eu consigo ver o comentário que fiz
 
+Scenario 1: Armazenar comentários de uma mesma thread
+Given eu estou em uma thread de um comentário.
+When eu crio meu comentário e confirmo.
+Then o banco de dados armazena meu comentário dentro da thread que estava.
+And o identificador do meu usuário e o horário em que comentei.
+
