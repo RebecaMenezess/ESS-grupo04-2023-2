@@ -20,3 +20,12 @@ And eu clico no botão “Confirmar”
 Then eu volto para a seção de comentários do post que estava
 And eu consigo ver o meu comentário após a minha edição
 
+Scenario 2: Criação de novo comentário
+Given eu estou na página de comentários de um post
+When eu seleciono a opção “Comentar”
+Then eu sou redirecionada para uma tela ligada à criação de novo comentário
+When eu digito o que desejo que esteja presente no meu comentário 
+And eu clico no botão “Confirmar”
+Then eu volto para a seção de comentários do post que estava
+And eu consigo ver o comentário que fiz
+
