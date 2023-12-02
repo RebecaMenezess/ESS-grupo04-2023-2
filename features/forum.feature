@@ -21,3 +21,18 @@ Then eu volto para a seção de comentários do post que estava
 And eu consigo ver o meu comentário após a minha edição
 
 Then um pop-up que diz Edited aparece na tela
+Scenario 2: Criação de novo comentário
+Given eu estou na página de comentários de um post
+When eu seleciono a opção “Comentar”
+Then eu sou redirecionada para uma tela ligada à criação de novo comentário
+When eu digito o que desejo que esteja presente no meu comentário 
+And eu clico no botão “Confirmar”
+Then eu volto para a seção de comentários do post que estava
+And eu consigo ver o comentário que fiz
+
+Scenario 1: Armazenar comentários de uma mesma thread
+Given eu estou em uma thread de um comentário.
+When eu crio meu comentário e confirmo.
+Then o banco de dados armazena meu comentário dentro da thread que estava.
+And o identificador do meu usuário e o horário em que comentei.
+
