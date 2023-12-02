@@ -11,3 +11,12 @@ Scenario 4: Remoção de comentário
     Then eu volto para a seção de comentários do post que estava
     And eu não posso mais ver o meu comentário
 
+Scenario 3: Edição de comentário
+Given eu estou na página de comentários de um post
+When eu seleciono a opção “Editar Comentário” em um comentário que fiz
+Then sou redirecionada para uma nova tela onde posso editar meu comentário
+When eu edito o comentário
+And eu clico no botão “Confirmar”
+Then eu volto para a seção de comentários do post que estava
+And eu consigo ver o meu comentário após a minha edição
+
