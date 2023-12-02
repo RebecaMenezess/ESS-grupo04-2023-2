@@ -20,3 +20,4 @@ And eu clico no botão “Confirmar”
 Then eu volto para a seção de comentários do post que estava
 And eu consigo ver o meu comentário após a minha edição
 
+Then um pop-up que diz Edited aparece na tela
